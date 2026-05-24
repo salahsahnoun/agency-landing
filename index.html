@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Forge Studio — Agence digitale créative. Web design, développement, branding et SEO à Paris." />
+  <title>Forge Studio — Agence Digitale Créative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Preloader ── -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">
+      <div class="logo-mark large">F</div>
+    </div>
+    <div class="preloader-bar-wrap">
+      <div class="preloader-bar" id="preloaderBar"></div>
+    </div>
+    <span class="preloader-label">Forge Studio</span>
+  </div>
+
+  <!-- ── Scroll progress ── -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ── Custom cursor ── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="logo-mark">F</div>
+        <span>Forge Studio</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about"   class="nl">À propos</a>
+        <a href="#services" class="nl">Services</a>
+        <a href="#work"    class="nl">Projets</a>
+        <a href="#team"    class="nl">Équipe</a>
+        <a href="#contact" class="nl">Contact</a>
+      </div>
+      <a href="#contact" class="nav-cta">Démarrer un projet</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-orb orb-1" id="orb1"></div>
+    <div class="hero-orb orb-2" id="orb2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <div class="hero-inner">
+      <div class="hero-eyebrow reveal">
+        <span class="dot"></span>Disponible pour de nouveaux projets — 2026
+      </div>
+
+      <h1 class="hero-title reveal">
+        Nous créons des<br>
+        expériences&nbsp;<span class="gradient-text"><span id="typedText"></span><span class="cursor-blink">|</span></span>
+      </h1>
+
+      <p class="hero-desc reveal">
+        Forge Studio est une agence digitale créative spécialisée dans la conception de sites web,
+        d'identités visuelles et d'expériences numériques qui marquent les esprits durablement.
+      </p>
+
+      <div class="hero-ctas reveal">
+        <a href="#work" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+          Voir nos projets
+        </a>
+        <a href="#contact" class="btn-secondary">
+          Nous contacter
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Floating badges -->
+      <div class="hero-badges reveal">
+        <div class="hero-badge badge-1">
+          <span class="badge-icon">⭐</span>
+          <div>
+            <strong>4.9/5</strong>
+            <span>Note client</span>
+          </div>
+        </div>
+        <div class="hero-badge badge-2">
+          <span class="badge-icon">🚀</span>
+          <div>
+            <strong>150+</strong>
+            <span>Projets livrés</span>
+          </div>
+        </div>
+        <div class="hero-badge badge-3">
+          <span class="badge-icon">⚡</span>
+          <div>
+            <strong>4 sem.</strong>
+            <span>Délai moyen</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll reveal">
+        <div class="scroll-line"></div>
+        <span>Scroll pour découvrir</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Marquee ── -->
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span>Web Design</span><span class="msep">✦</span>
+      <span>Développement</span><span class="msep">✦</span>
+      <span>Branding</span><span class="msep">✦</span>
+      <span>UX / UI</span><span class="msep">✦</span>
+      <span>E-commerce</span><span class="msep">✦</span>
+      <span>SEO</span><span class="msep">✦</span>
+      <span>Motion Design</span><span class="msep">✦</span>
+      <span>Applications Web</span><span class="msep">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Web Design</span><span class="msep">✦</span>
+      <span>Développement</span><span class="msep">✦</span>
+      <span>Branding</span><span class="msep">✦</span>
+      <span>UX / UI</span><span class="msep">✦</span>
+      <span>E-commerce</span><span class="msep">✦</span>
+      <span>SEO</span><span class="msep">✦</span>
+      <span>Motion Design</span><span class="msep">✦</span>
+      <span>Applications Web</span><span class="msep">✦</span>
+    </div>
+  </div>
+
+  <!-- ── Stats Bar ── -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item reveal">
+        <div class="stat-num-wrap">
+          <span class="stat-num" data-target="150">0</span><span class="stat-suffix">+</span>
+        </div>
+        <p>Projets livrés</p>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item reveal" style="--delay:.1s">
+        <div class="stat-num-wrap">
+          <span class="stat-num" data-target="80">0</span><span class="stat-suffix">+</span>
+        </div>
+        <p>Clients satisfaits</p>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item reveal" style="--delay:.2s">
+        <div class="stat-num-wrap">
+          <span class="stat-num" data-target="7">0</span>
+        </div>
+        <p>Années d'expérience</p>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item reveal" style="--delay:.3s">
+        <div class="stat-num-wrap">
+          <span class="stat-num" data-target="12">0</span>
+        </div>
+        <p>Récompenses design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="section-label reveal">À propos</div>
+          <h2 class="section-heading reveal">Un studio créatif<br>au service de votre vision</h2>
+          <p class="about-text reveal">
+            Fondé en 2019 à Paris, Forge Studio accompagne les entreprises ambitieuses dans leur transformation digitale. Nous ne livrons pas simplement des sites web — nous construisons des outils de croissance.
+          </p>
+          <p class="about-text reveal" style="--delay:.1s">
+            Notre approche mêle rigueur technique et sensibilité créative. Chaque projet est unique : nous prenons le temps de comprendre votre business avant d'ouvrir notre éditeur de code.
+          </p>
+          <div class="about-values reveal" style="--delay:.2s">
+            <div class="value-item">
+              <div class="value-icon">🎯</div>
+              <div>
+                <strong>Orienté résultats</strong>
+                <span>Le design au service de la conversion</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🤝</div>
+              <div>
+                <strong>Transparence totale</strong>
+                <span>Vous validez chaque étape</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">⚡</div>
+              <div>
+                <strong>Délais respectés</strong>
+                <span>96% des projets livrés à temps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal" style="--delay:.15s">
+          <!-- Main floating card -->
+          <div class="acard main-acard">
+            <div class="acard-header">
+              <span class="acard-dot" style="background:#10b981"></span>
+              <span class="acard-title">Bilan Projets 2026</span>
+            </div>
+            <div class="acard-stat-big">38 <span>projets</span></div>
+            <div class="acard-progress-wrap">
+              <div class="acard-progress" style="width:78%"></div>
+            </div>
+            <div class="acard-rows">
+              <div class="acard-row"><span>Sites vitrines</span><div class="acard-bar-mini"><div style="width:72%"></div></div><span>18</span></div>
+              <div class="acard-row"><span>E-commerce</span><div class="acard-bar-mini"><div style="width:52%"></div></div><span>12</span></div>
+              <div class="acard-row"><span>Applications</span><div class="acard-bar-mini"><div style="width:38%"></div></div><span>8</span></div>
+            </div>
+          </div>
+          <!-- Mini cards -->
+          <div class="acard mini-acard mc-1">
+            <div class="mini-icon">⭐</div>
+            <strong>4.9 / 5</strong>
+            <span>Note moyenne</span>
+          </div>
+          <div class="acard mini-acard mc-2">
+            <div class="mini-icon">🏆</div>
+            <strong>12 Awards</strong>
+            <span>Design primé</span>
+          </div>
+          <div class="acard mini-acard mc-3">
+            <div class="mini-icon">🌍</div>
+            <strong>8 pays</strong>
+            <span>Clients internationaux</span>
+          </div>
+          <!-- Gradient orb behind -->
+          <div class="about-orb"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services ── -->
+  <section class="services-section" id="services">
+    <div class="section-container">
+      <div class="section-label reveal">Services</div>
+      <h2 class="section-heading reveal">Ce que nous faisons</h2>
+      <div class="services-grid">
+
+        <div class="service-card reveal" style="--delay:.0s">
+          <div class="service-num">01</div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Web Design</h3>
+          <p>Des interfaces élégantes pensées pour l'expérience utilisateur. Maquettes Figma, design system, prototypes interactifs.</p>
+          <div class="service-tags">
+            <span>Figma</span><span>UI/UX</span><span>Prototype</span>
+          </div>
+          <a href="#contact" class="service-link">Démarrer un projet →</a>
+        </div>
+
+        <div class="service-card reveal" style="--delay:.1s">
+          <div class="service-num">02</div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Développement</h3>
+          <p>Sites web et applications performants, responsive et accessibles. Code propre, maintenable, optimisé Core Web Vitals.</p>
+          <div class="service-tags">
+            <span>HTML/CSS</span><span>JavaScript</span><span>React</span>
+          </div>
+          <a href="#contact" class="service-link">Démarrer un projet →</a>
+        </div>
+
+        <div class="service-card reveal" style="--delay:.2s">
+          <div class="service-num">03</div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Branding</h3>
+          <p>Identité visuelle complète : logo, typographie, palette, charte graphique, templates et déclinaisons sur tous supports.</p>
+          <div class="service-tags">
+            <span>Logo</span><span>Charte</span><span>Supports</span>
+          </div>
+          <a href="#contact" class="service-link">Démarrer un projet →</a>
+        </div>
+
+        <div class="service-card reveal" style="--delay:.3s">
+          <div class="service-num">04</div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>SEO & Visibilité</h3>
+          <p>Audit technique, optimisation on-page, stratégie de contenu et netlinking. Résultats mesurables dès le 3e mois.</p>
+          <div class="service-tags">
+            <span>Audit</span><span>On-page</span><span>Contenu</span>
+          </div>
+          <a href="#contact" class="service-link">Démarrer un projet →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Tech Stack ── -->
+  <section class="tech-section">
+    <div class="section-container">
+      <p class="tech-label reveal">Technologies maîtrisées</p>
+      <div class="tech-grid reveal" style="--delay:.1s">
+        <div class="tech-pill"><span>HTML5</span></div>
+        <div class="tech-pill"><span>CSS3</span></div>
+        <div class="tech-pill active"><span>JavaScript</span></div>
+        <div class="tech-pill"><span>React</span></div>
+        <div class="tech-pill"><span>Vue.js</span></div>
+        <div class="tech-pill active"><span>Next.js</span></div>
+        <div class="tech-pill"><span>Node.js</span></div>
+        <div class="tech-pill"><span>WordPress</span></div>
+        <div class="tech-pill active"><span>Shopify</span></div>
+        <div class="tech-pill"><span>Webflow</span></div>
+        <div class="tech-pill"><span>Figma</span></div>
+        <div class="tech-pill"><span>MySQL</span></div>
+        <div class="tech-pill active"><span>Tailwind CSS</span></div>
+        <div class="tech-pill"><span>GSAP</span></div>
+        <div class="tech-pill"><span>Framer Motion</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Portfolio ── -->
+  <section class="work-section" id="work">
+    <div class="section-container">
+      <div class="section-label reveal">Projets</div>
+      <div class="work-header">
+        <h2 class="section-heading reveal">Nos réalisations</h2>
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-cat="all">Tous</button>
+          <button class="filter-btn" data-cat="web">Web Design</button>
+          <button class="filter-btn" data-cat="dev">Développement</button>
+          <button class="filter-btn" data-cat="brand">Branding</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-item reveal" data-cat="web" style="--delay:.0s">
+          <div class="pitem-bg" style="background:linear-gradient(135deg,#7c3aed,#4f46e5)">
+            <div class="pitem-visual">
+              <div class="mock-browser">
+                <div class="mock-bar"><span></span><span></span><span></span><div class="mock-url"></div></div>
+                <div class="mock-content">
+                  <div class="mc-hero-line"></div>
+                  <div class="mc-sub-line"></div>
+                  <div class="mc-btn-mock"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pitem-overlay">
+            <span class="pitem-cat">Web Design</span>
+            <h3>LuxeHotel — Site vitrine</h3>
+            <p>Refonte complète d'un hôtel 5 étoiles parisien</p>
+            <span class="pitem-arrow">↗</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-cat="dev" style="--delay:.1s">
+          <div class="pitem-bg" style="background:linear-gradient(135deg,#06b6d4,#0284c7)">
+            <div class="pitem-visual">
+              <div class="mock-dashboard">
+                <div class="md-sidebar"></div>
+                <div class="md-main">
+                  <div class="md-cards">
+                    <div class="md-card"></div><div class="md-card"></div><div class="md-card"></div>
+                  </div>
+                  <div class="md-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pitem-overlay">
+            <span class="pitem-cat">Développement</span>
+            <h3>DataFlow — Dashboard SaaS</h3>
+            <p>Application d'analyse de données temps réel</p>
+            <span class="pitem-arrow">↗</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-cat="brand" style="--delay:.2s">
+          <div class="pitem-bg" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
+            <div class="pitem-visual brand-visual">
+              <div class="brand-logo-mock">K</div>
+              <div class="brand-lines">
+                <div></div><div class="short"></div><div class="xs"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pitem-overlay">
+            <span class="pitem-cat">Branding</span>
+            <h3>Kalo — Identité visuelle</h3>
+            <p>Identité complète d'une startup fintech</p>
+            <span class="pitem-arrow">↗</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-cat="web" style="--delay:.0s">
+          <div class="pitem-bg" style="background:linear-gradient(135deg,#10b981,#0d9488)">
+            <div class="pitem-visual">
+              <div class="mock-browser">
+                <div class="mock-bar"><span></span><span></span><span></span><div class="mock-url"></div></div>
+                <div class="mock-content green">
+                  <div class="mc-product-grid">
+                    <div class="mc-product"></div>
+                    <div class="mc-product"></div>
+                    <div class="mc-product"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pitem-overlay">
+            <span class="pitem-cat">Web Design</span>
+            <h3>NatureLab — E-commerce</h3>
+            <p>Boutique en ligne, cosmétiques bio</p>
+            <span class="pitem-arrow">↗</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-cat="dev" style="--delay:.1s">
+          <div class="pitem-bg" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)">
+            <div class="pitem-visual">
+              <div class="mock-app">
+                <div class="app-topbar"></div>
+                <div class="app-row"><div class="app-av"></div><div class="app-lines"><div></div><div class="short"></div></div></div>
+                <div class="app-row right"><div class="app-lines right-lines"><div></div><div class="short"></div></div><div class="app-av pink"></div></div>
+                <div class="app-row"><div class="app-av green"></div><div class="app-lines"><div></div><div class="short"></div></div></div>
+                <div class="app-input"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pitem-overlay">
+            <span class="pitem-cat">Développement</span>
+            <h3>PulseChat — Messagerie web</h3>
+            <p>Interface temps réel pour équipes créatives</p>
+            <span class="pitem-arrow">↗</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-cat="brand" style="--delay:.2s">
+          <div class="pitem-bg" style="background:linear-gradient(135deg,#1e293b,#0f172a)">
+            <div class="pitem-visual brand-visual">
+              <div class="brand-logo-mock dark">A</div>
+              <div class="brand-lines dark">
+                <div></div><div class="short"></div><div class="xs"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pitem-overlay">
+            <span class="pitem-cat">Branding</span>
+            <h3>Arkon — Charte graphique</h3>
+            <p>Refonte identité visuelle, cabinet d'architectes</p>
+            <span class="pitem-arrow">↗</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Process ── -->
+  <section class="process-section" id="process">
+    <div class="section-container">
+      <div class="section-label reveal">Méthode</div>
+      <h2 class="section-heading reveal">Notre processus en 4 étapes</h2>
+      <div class="process-steps">
+        <div class="process-step reveal" style="--delay:.0s">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Découverte</h3>
+            <p>Brief approfondi, analyse concurrentielle, définition des personas et des objectifs business. On ne commence pas sans comprendre.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" style="--delay:.12s">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>Conception</h3>
+            <p>Wireframes, moodboard, design system Figma. Prototype interactif livré avant toute ligne de code. Itérations jusqu'à validation.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" style="--delay:.24s">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Développement</h3>
+            <p>Code propre et documenté, optimisation des performances (90+ Lighthouse), responsive multi-device, SEO technique intégré.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" style="--delay:.36s">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Livraison & Suivi</h3>
+            <p>Mise en ligne soignée, formation à l'administration, rapport de performance J+30. Disponibles pour les évolutions long terme.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Team ── -->
+  <section class="team-section" id="team">
+    <div class="section-container">
+      <div class="section-label reveal">L'équipe</div>
+      <h2 class="section-heading reveal">Des experts à votre service</h2>
+      <div class="team-grid">
+
+        <div class="team-card reveal" style="--delay:.0s">
+          <div class="team-avatar" style="--av1:#7c3aed;--av2:#4f46e5">AL</div>
+          <div class="team-info">
+            <h3>Antoine Lefèvre</h3>
+            <span class="team-role">Directeur Créatif</span>
+            <p>10 ans d'expérience en design d'interfaces. Ex-agence TBWA Paris. Passionné de typographie et de design systems.</p>
+            <div class="team-tags">
+              <span>Figma</span><span>Branding</span><span>UI/UX</span>
+            </div>
+          </div>
+          <div class="team-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Behance">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zM7.44 10.07c1.62.585 2.558 1.629 2.558 3.43 0 2.65-2.052 4-5.44 4H0V4h4.258c3.07 0 4.914 1.007 4.914 3.295C9.172 8.79 8.636 9.55 7.44 10.07zM2.26 8.955h2.15c1.087 0 1.687-.434 1.687-1.282 0-.878-.677-1.259-1.697-1.259H2.26v2.541zm2.49 5.316H2.26v-2.86h2.49c1.276 0 1.877.552 1.877 1.43 0 .9-.601 1.43-1.877 1.43z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card reveal" style="--delay:.12s">
+          <div class="team-avatar" style="--av1:#06b6d4;--av2:#0284c7">MC</div>
+          <div class="team-info">
+            <h3>Marie Chen</h3>
+            <span class="team-role">Lead Developer</span>
+            <p>Ingénieure full-stack spécialisée React et Node.js. Obsédée par les performances web et l'accessibilité. Score Lighthouse 99/100.</p>
+            <div class="team-tags">
+              <span>React</span><span>Next.js</span><span>Node.js</span>
+            </div>
+          </div>
+          <div class="team-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card reveal" style="--delay:.24s">
+          <div class="team-avatar" style="--av1:#10b981;--av2:#059669">LB</div>
+          <div class="team-info">
+            <h3>Lucas Bernard</h3>
+            <span class="team-role">Stratège SEO & Growth</span>
+            <p>Expert SEO technique et growth hacking. A aidé 50+ entreprises à multiplier par 3 leur trafic organique en 6 mois.</p>
+            <div class="team-tags">
+              <span>SEO</span><span>Analytics</span><span>Growth</span>
+            </div>
+          </div>
+          <div class="team-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials ── -->
+  <section class="testimonials-section">
+    <div class="section-container">
+      <div class="section-label reveal">Témoignages</div>
+      <h2 class="section-heading reveal">Ce que disent nos clients</h2>
+      <div class="testimonials-grid">
+
+        <div class="testi-card reveal" style="--delay:.0s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Forge Studio a transformé notre site en un vrai outil de vente. Résultat : +68% de conversions en 3 mois après le lancement. L'équipe est réactive, créative et vraiment à l'écoute.</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background:linear-gradient(135deg,#7c3aed,#4f46e5)">CD</div>
+            <div>
+              <strong>Claire Dupont</strong>
+              <span>CEO — NatureLab</span>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal" style="--delay:.12s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Du brief au lancement en 4 semaines, exactement comme promis. Le site reflète parfaitement l'ADN de notre marque fintech. Nous avons levé des fonds 2 semaines après le lancement.</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">TM</div>
+            <div>
+              <strong>Thomas Martin</strong>
+              <span>Fondateur — Kalo</span>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal" style="--delay:.24s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Collaboration exceptionnelle sur la refonte de notre site. Le nouveau LuxeHotel.fr a augmenté nos réservations directes de 42% dès le premier mois. Qualité premium, à recommander sans hésitation.</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background:linear-gradient(135deg,#06b6d4,#0284c7)">IR</div>
+            <div>
+              <strong>Isabelle Roy</strong>
+              <span>Directrice Générale — LuxeHotel</span>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Banner ── -->
+  <section class="cta-banner">
+    <div class="cta-orb"></div>
+    <div class="cta-orb cta-orb-2"></div>
+    <div class="section-container cta-inner reveal">
+      <div class="cta-badge">🚀 Prêt à décoller ?</div>
+      <h2>Transformons votre vision<br>en réalité digitale</h2>
+      <p>Premier rendez-vous offert, sans engagement. On répond sous 24h.</p>
+      <div class="cta-actions">
+        <a href="#contact" class="btn-primary large">Démarrer un projet →</a>
+        <a href="tel:+33123456789" class="btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Nous appeler
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <div class="section-label">Contact</div>
+          <h2 class="section-heading">Parlons de votre<br>projet</h2>
+          <p class="contact-desc">On répond à tous les messages sous 24h. Plus vous nous donnez de détails, plus notre réponse sera précise et utile.</p>
+          <div class="contact-details">
+            <a href="mailto:hello@forgestudio.fr" class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>hello@forgestudio.fr</span>
+              </div>
+            </a>
+            <a href="tel:+33123456789" class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Téléphone</strong>
+                <span>+33 1 23 45 67 89</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Localisation</strong>
+                <span>Paris & Full Remote, France</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-availability">
+            <span class="avail-dot"></span>
+            Disponible pour de nouveaux projets dès juin 2026
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal" style="--delay:.1s">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Prénom *</label>
+                <input type="text" id="fname" placeholder="Marie" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Nom *</label>
+                <input type="text" id="lname" placeholder="Dupont" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email professionnel *</label>
+              <input type="email" id="email" placeholder="marie@entreprise.fr" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="project-type">Type de projet *</label>
+                <select id="project-type" required>
+                  <option value="">Sélectionner...</option>
+                  <option>Site vitrine</option>
+                  <option>E-commerce</option>
+                  <option>Application web</option>
+                  <option>Refonte</option>
+                  <option>Branding</option>
+                  <option>SEO</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget">Budget estimé</label>
+                <select id="budget">
+                  <option value="">Sélectionner...</option>
+                  <option>Moins de 2 000 €</option>
+                  <option>2 000 € — 5 000 €</option>
+                  <option>5 000 € — 15 000 €</option>
+                  <option>Plus de 15 000 €</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Décrivez votre projet *</label>
+              <textarea id="message" rows="5" placeholder="Parlez-nous de votre projet, vos objectifs, vos délais et tout ce que vous jugez utile..." required></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="rgpd" required />
+              <label for="rgpd">J'accepte que mes données soient utilisées pour répondre à ma demande</label>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              Envoyer le message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="section-container footer-inner">
+      <div class="footer-left">
+        <a href="#" class="nav-logo footer-logo">
+          <div class="logo-mark">F</div>
+          <span>Forge Studio</span>
+        </a>
+        <p>Agence digitale créative basée à Paris.<br>On conçoit des expériences qui convertissent.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn" class="fsocial">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="Behance" class="fsocial">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zM7.44 10.07c1.62.585 2.558 1.629 2.558 3.43 0 2.65-2.052 4-5.44 4H0V4h4.258c3.07 0 4.914 1.007 4.914 3.295C9.172 8.79 8.636 9.55 7.44 10.07zM2.26 8.955h2.15c1.087 0 1.687-.434 1.687-1.282 0-.878-.677-1.259-1.697-1.259H2.26v2.541zm2.49 5.316H2.26v-2.86h2.49c1.276 0 1.877.552 1.877 1.43 0 .9-.601 1.43-1.877 1.43z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="fsocial">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <strong>Studio</strong>
+          <a href="#about">À propos</a>
+          <a href="#work">Projets</a>
+          <a href="#team">Équipe</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <strong>Services</strong>
+          <a href="#services">Web Design</a>
+          <a href="#services">Développement</a>
+          <a href="#services">Branding</a>
+          <a href="#services">SEO</a>
+        </div>
+        <div class="footer-col">
+          <strong>Légal</strong>
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentialité</a>
+          <a href="#">CGV</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="section-container footer-bottom-inner">
+        <p>© 2026 Forge Studio. Tous droits réservés.</p>
+        <p>Fait avec <span style="color:#ec4899">♥</span> à Paris, France.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Back to top ── -->
+  <button class="back-top" id="backTop" aria-label="Retour en haut">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
