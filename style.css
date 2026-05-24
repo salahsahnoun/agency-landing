@@ -278,7 +278,13 @@ body {
   width: 100%;
   position: relative;
   z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
 }
+
+.hero-content { display: flex; flex-direction: column; }
 
 .hero-eyebrow {
   display: inline-flex;
@@ -308,7 +314,7 @@ body {
 }
 
 .hero-title {
-  font-size: clamp(46px, 7.5vw, 92px);
+  font-size: clamp(36px, 5.2vw, 70px);
   font-weight: 900;
   line-height: 1.04;
   letter-spacing: -3px;
@@ -1431,4 +1437,95 @@ body {
 @media (max-width: 480px) {
   .hero-ctas { flex-direction: column; align-items: flex-start; }
   .cta-actions { flex-direction: column; align-items: center; }
+}
+
+/* ── Hero Visual (image) ─────────────────────────── */
+.hero-visual { position: relative; }
+
+.hero-visual-wrap {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0,0,0,.65), 0 0 0 1px rgba(255,255,255,.07);
+}
+
+.hero-visual-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-visual-badge {
+  position: absolute;
+  background: rgba(12,12,22,.93);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  box-shadow: 0 8px 32px rgba(0,0,0,.45);
+}
+
+.hero-visual-badge > span       { font-size: 22px; }
+.hero-visual-badge strong       { display: block; font-size: 13px; font-weight: 700; }
+.hero-visual-badge > div > span { color: var(--muted); font-size: 11px; }
+
+.hv-badge-1 { bottom: 28px; left: -16px; }
+.hv-badge-2 { top: 28px;   right: -16px; }
+
+/* ── Portfolio Photo Items ───────────────────────── */
+.pitem-photo {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item:hover .pitem-photo { transform: none; }
+
+.pitem-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .55s cubic-bezier(.2,.8,.2,1);
+}
+
+.portfolio-item:hover .pitem-img { transform: scale(1.08); }
+
+/* ── Team Photo Avatars ──────────────────────────── */
+.team-avatar-wrap {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 18px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.4), 0 0 0 3px rgba(124,58,237,.22);
+}
+
+.team-avatar-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Testimonial Photo Avatars ───────────────────── */
+.testi-av { overflow: hidden; }
+
+.testi-av-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Hero Visual Responsive ──────────────────────── */
+@media (max-width: 980px) {
+  .hero-inner  { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+  .hero-title  { font-size: clamp(40px, 8vw, 68px); }
 }
